@@ -16,6 +16,5 @@ prob.Objective = sum(sum(c .* x));
 prob.Constraints.con1 = sum(x, 1) == d; 
 % 不超过产量
 prob.Constraints.con2 = sum(x, 2) <= e;
-
 [sol, fval, flag, out] = solve(prob);
 
